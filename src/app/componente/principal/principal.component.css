@@ -1,0 +1,30 @@
+.principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center; /* Isso alinha as colunas dentro do container */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 2rem 16rem;
+  height: 60vh;
+}
+.imagem img {
+  width: 100%;
+  max-width: 400px;
+}
+.imagem {
+  display: flex;
+
+  text-align: flex-end;
+  justify-content: center;
+}
+.texto {
+  width: 60%;
+}
+h1 {
+  color: #624256;
+  font-size: 32px;
+}
+p {
+  color: #bd96ae;
+  font-size: 20px;
+}
