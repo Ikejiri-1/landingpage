@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { CabecalhoComponent } from './componente/cabecalho/cabecalho.component';
-import { PrincipalComponent } from './paginas/principal/principal.component';
+import { PrincipalComponent } from './paginas/sobremim/principal/principal.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, CabecalhoComponent, PrincipalComponent],
+  imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
