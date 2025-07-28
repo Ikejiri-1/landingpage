@@ -1,0 +1,46 @@
+<section class="consulta">
+  <div class="container-texto">
+    <h2>Marque sua Consulta!</h2>
+    <p>
+      Já pensou em cuidar do seu corpo com um método inovador, capaz de
+      transformar sua saúde desde os primeiros dias? Preencha seus dados abaixo
+      e dê o primeiro passo rumo a mais bem-estar e qualidade de vida:
+    </p>
+    <form [formGroup]="infoPacienteForm" (ngSubmit)="enviarConsulta()">
+      <label for="nome">Nome:</label>
+      <input
+        formControlName="nome"
+        id="nome"
+        type="text"
+        placeholder="Seu nome"
+      />
+
+      <label for="telefone">Telefone:</label>
+      <input
+        formControlName="telefone"
+        id="telefone"
+        type="tel"
+        placeholder="Seu telefone"
+      />
+
+      <label for="email">E-mail:</label>
+      <input
+        formControlName="email"
+        id="email"
+        type="email"
+        placeholder="Seu e-mail"
+      />
+
+      <label for="data">Data desejada:</label>
+      <input
+        formControlName="data"
+        id="data"
+        type="date"
+        placeholder="Data da consulta"
+        [min]="hoje"
+      />
+
+      <button type="submit">Marcar Consulta</button>
+    </form>
+  </div>
+</section>

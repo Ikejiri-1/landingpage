@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center; /* Isso alinha as colunas dentro do container */
   margin: 0 auto; /* Centraliza horizontalmente */
-  padding: 2rem 16rem;
+  padding: 2rem 16rem 0 16rem;
   height: 60vh;
 }
 .imagem img {
@@ -25,6 +25,6 @@ h1 {
   font-size: 32px;
 }
 p {
-  color: #bd96ae;
+  color: #624256;
   font-size: 20px;
 }

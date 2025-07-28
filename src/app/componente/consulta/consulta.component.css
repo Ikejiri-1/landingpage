@@ -1,0 +1,54 @@
+.consulta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem;
+  height: 70vh;
+}
+h2 {
+  font-size: 32px;
+  color: #624256;
+  margin-bottom: 1em;
+}
+p {
+  font-size: 20px;
+  color: #624256;
+  padding: 0 16em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+label {
+  font-size: 18px;
+  color: #624256;
+  margin-bottom: 0.5em;
+}
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #624256;
+  border-radius: 4px;
+}
+button {
+  margin-top: 1em;
+  padding: 1em 2em;
+  background: transparent;
+  border-radius: 16px;
+  border: 1px solid #624256;
+  color: #624256;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+button:hover {
+  background-color: #624256;
+  color: #fff;
+}

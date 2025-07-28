@@ -5,12 +5,14 @@
   <div class="lista-nav">
     <ul>
       <li>
-        <button routerLink="sobre-mim">Sobre mim</button>
+        <button [routerLink]="rotaAtual === '/sobre-mim' ? '' : '/sobre-mim'">
+          {{ rotaAtual === "/sobre-mim" ? "Início" : "Sobre mim" }}
+        </button>
       </li>
     </ul>
     <ul>
       <li>
-        <button>Procedimentos</button>
+        <button class="botao-procedimentos">Procedimentos</button>
       </li>
     </ul>
     <ul>
@@ -21,3 +23,4 @@
     <input type="text" placeholder="Pesquisar" />
   </div>
 </nav>
+<app-separador></app-separador>

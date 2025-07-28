@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { CabecalhoComponent } from './componente/cabecalho/cabecalho.component';
-import { PrincipalComponent } from './paginas/sobremim/principal/principal.component';
+import { PrincipalComponent } from './paginas/principal/principal.component';
 
 @Component({
   selector: 'app-root',

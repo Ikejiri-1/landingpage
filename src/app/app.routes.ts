@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { PrincipalComponent } from './paginas/sobremim/principal/principal.component';
+import { PrincipalComponent } from './paginas/principal/principal.component';
 import { SobremimComponent } from './paginas/sobremim/sobremim.component';
 
 export const routes: Routes = [
