@@ -14,7 +14,10 @@
         type="text"
         placeholder="Seu nome"
       />
-
+      @if(infoPacienteForm.get('nome')?.errors &&
+      infoPacienteForm.get('nome')?.touched){
+      <div class="error">Campo obrigatório</div>
+      }
       <label for="telefone">Telefone:</label>
       <input
         formControlName="telefone"
@@ -22,7 +25,10 @@
         type="tel"
         placeholder="Seu telefone"
       />
-
+      @if(infoPacienteForm.get('telefone')?.errors &&
+      infoPacienteForm.get('telefone')?.touched){
+      <div class="error">Campo obrigatório</div>
+      }
       <label for="email">E-mail:</label>
       <input
         formControlName="email"
@@ -30,7 +36,13 @@
         type="email"
         placeholder="Seu e-mail"
       />
-
+      @if (infoPacienteForm.get('email')?.errors?.['required'] &&
+      infoPacienteForm.get('email')?.touched) {
+      <div class="error">Campo obrigatório</div>
+      } @if (infoPacienteForm.get('email')?.errors?.['email'] &&
+      infoPacienteForm.get('email')?.touched) {
+      <div class="error">Formato de e-mail inválido</div>
+      }
       <label for="data">Data desejada:</label>
       <input
         formControlName="data"
@@ -40,7 +52,14 @@
         [min]="hoje"
       />
 
-      <button type="submit">Marcar Consulta</button>
+      <button
+        class="botao-consulta"
+        type="submit"
+        [disabled]="infoPacienteForm.invalid"
+        [ngClass]="infoPacienteForm.valid ? 'botao-consulta' : 'botao-inativo'"
+      >
+        Marcar Consulta
+      </button>
     </form>
   </div>
 </section>

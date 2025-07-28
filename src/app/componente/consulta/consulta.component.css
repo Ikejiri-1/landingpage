@@ -7,7 +7,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 4rem;
-  height: 70vh;
+  height: 80vh;
 }
 h2 {
   font-size: 32px;
@@ -38,7 +38,7 @@ input {
   border: 1px solid #624256;
   border-radius: 4px;
 }
-button {
+.botao-consulta {
   margin-top: 1em;
   padding: 1em 2em;
   background: transparent;
@@ -48,7 +48,16 @@ button {
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
-button:hover {
+.botao-consulta:hover {
   background-color: #624256;
   color: #fff;
+}
+.botao-inativo {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.error {
+  font-size: 16px;
+  color: red;
+  margin-bottom: 12px;
 }
