@@ -1,0 +1,19 @@
+h1 {
+  color: #ffffff;
+  font-size: 40px;
+  margin-bottom: 1em;
+}
+p {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 1em;
+  line-height: 150%;
+}
+.sobremim {
+  padding-left: 4rem;
+  margin: 1rem;
+}
+.sobremim-topo {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+}
