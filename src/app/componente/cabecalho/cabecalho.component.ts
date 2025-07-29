@@ -17,4 +17,10 @@ export class CabecalhoComponent {
       this.rotaAtual = this.router.url;
     });
   }
+  redirecionarParaContato() {
+    const elemento = document.getElementById('contato');
+    if (elemento) {
+      elemento.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
