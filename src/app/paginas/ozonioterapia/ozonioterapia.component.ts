@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { CabecalhoComponent } from '../../componente/cabecalho/cabecalho.component';
 
 @Component({
   selector: 'app-ozonioterapia',
   standalone: true,
-  imports: [],
+  imports: [CabecalhoComponent],
   templateUrl: './ozonioterapia.component.html',
-  styleUrl: './ozonioterapia.component.css'
+  styleUrl: './ozonioterapia.component.css',
 })
-export class OzonioterapiaComponent {
-
-}
+export class OzonioterapiaComponent {}

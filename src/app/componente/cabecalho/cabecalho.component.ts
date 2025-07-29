@@ -1,6 +1,14 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import {
+  Component,
+  computed,
+  ElementRef,
+  HostListener,
+  inject,
+  signal,
+} from '@angular/core';
+import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { SeparadorComponent } from '../separador/separador.component';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-cabecalho',
@@ -10,14 +18,26 @@ import { SeparadorComponent } from '../separador/separador.component';
   styleUrl: './cabecalho.component.css',
 })
 export class CabecalhoComponent {
-  rotaAtual: string = '';
-  mostrarSubmenu: boolean = false;
+  private router: Router = inject(Router);
 
-  constructor(private router: Router, private elementRef: ElementRef) {
-    this.router.events.subscribe(() => {
-      this.rotaAtual = this.router.url;
-    });
+  rotaAtual = signal<string>('');
+  mostrarSubmenu = signal(false);
+
+  constructor(private elementRef: ElementRef) {
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe((event) => {
+        const navEnd = event as NavigationEnd;
+        this.rotaAtual.set(navEnd.urlAfterRedirects);
+      });
   }
+  nomeDoBotao = computed(() =>
+    this.rotaAtual() === '/sobre-mim' ? 'Início' : 'Sobre mim'
+  );
+
+  linkDoBotao = computed(() =>
+    this.rotaAtual() === '/sobre-mim' ? '/' : '/sobre-mim'
+  );
   redirecionarParaContato() {
     const elemento = document.getElementById('contato');
     if (elemento) {
@@ -28,7 +48,10 @@ export class CabecalhoComponent {
   fecharSubmenuAoClicarFora(event: MouseEvent) {
     const clicadoDentro = this.elementRef.nativeElement.contains(event.target);
     if (!clicadoDentro) {
-      this.mostrarSubmenu = false;
+      this.mostrarSubmenu.set(false);
     }
+  }
+  alternarSubmenu() {
+    this.mostrarSubmenu.set(!this.mostrarSubmenu());
   }
 }

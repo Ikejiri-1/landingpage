@@ -5,22 +5,19 @@
   <div>
     <ul class="lista-nav">
       <li>
-        <button
-          class="botao-cabecalho"
-          [routerLink]="rotaAtual === '/sobre-mim' ? '' : '/sobre-mim'"
-        >
-          {{ rotaAtual === "/sobre-mim" ? "Início" : "Sobre mim" }}
+        <button class="botao-cabecalho" [routerLink]="linkDoBotao()">
+          {{ nomeDoBotao() }}
         </button>
       </li>
 
       <li class="submenu-container">
         <button
           class="botao-procedimentos botao-cabecalho"
-          (click)="mostrarSubmenu = !mostrarSubmenu"
+          (click)="alternarSubmenu()"
         >
           Procedimentos
         </button>
-        @if(mostrarSubmenu){
+        @if(mostrarSubmenu()){
         <ul class="submenu">
           <li>
             <button routerLink="/botox">
