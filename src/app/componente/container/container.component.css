@@ -4,5 +4,13 @@
   background: linear-gradient(to bottom, #624256, #bd96ae);
   box-shadow: 0px 8px 16px 0px (61, 139, 253, 0.15);
   width: 1200px;
+  margin: 80px 80px;
+}
+
+.centralizada {
   margin: 80px auto;
+}
+
+.direita {
+  margin: 80px 80px 80px auto;
 }

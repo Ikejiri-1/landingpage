@@ -2,18 +2,28 @@ h1 {
   color: #ffffff;
   font-size: 40px;
   margin-bottom: 1em;
+  margin-top: 1em;
 }
 p {
   color: #ffffff;
   font-size: 20px;
   margin-bottom: 1em;
-  line-height: 150%;
+  line-height: 140%;
+}
+h2 {
+  color: #ffffff;
+  text-align: end;
+  margin-right: 1em;
+}
+.citacao {
+  font-weight: bold;
 }
 .sobremim {
   padding-left: 4rem;
   margin: 1rem;
 }
-.sobremim-topo {
+.sobremim-topo,
+.sobremim-baixo {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
 }

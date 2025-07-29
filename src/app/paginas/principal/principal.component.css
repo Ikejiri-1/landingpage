@@ -21,3 +21,6 @@ p {
   font-size: 20px;
   line-height: 200%;
 }
+app-container .container {
+  margin: 0 auto;
+}

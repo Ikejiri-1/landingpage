@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-container',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './container.component.html',
-  styleUrl: './container.component.css'
+  styleUrl: './container.component.css',
 })
 export class ContainerComponent {
-
+  @Input() classeCustomizada: string = '';
 }
