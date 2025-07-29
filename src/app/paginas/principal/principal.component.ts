@@ -3,6 +3,7 @@ import { CabecalhoComponent } from '../../componente/cabecalho/cabecalho.compone
 import { SeparadorComponent } from '../../componente/separador/separador.component';
 import { ConsultaComponent } from '../../componente/consulta/consulta.component';
 import { RodapeComponent } from '../../componente/rodape/rodape.component';
+import { ContainerComponent } from '../../componente/container/container.component';
 
 @Component({
   selector: 'app-principal',
@@ -12,6 +13,7 @@ import { RodapeComponent } from '../../componente/rodape/rodape.component';
     RodapeComponent,
     SeparadorComponent,
     ConsultaComponent,
+    ContainerComponent,
   ],
   templateUrl: './principal.component.html',
   styleUrl: './principal.component.css',

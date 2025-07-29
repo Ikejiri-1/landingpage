@@ -1,30 +1,23 @@
 .principal {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.5fr 0.5fr;
   align-items: center;
   justify-content: center; /* Isso alinha as colunas dentro do container */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  padding: 2rem 16rem 0 16rem;
   height: 60vh;
+  padding: 4rem;
 }
 .imagem img {
   width: 100%;
   max-width: 400px;
 }
-.imagem {
-  display: flex;
 
-  text-align: flex-end;
-  justify-content: center;
-}
-.texto {
-  width: 60%;
-}
 h1 {
-  color: #624256;
+  color: #ffffff;
   font-size: 32px;
+  margin-bottom: 1rem;
 }
 p {
-  color: #624256;
+  color: #ffffff;
   font-size: 20px;
+  line-height: 200%;
 }
