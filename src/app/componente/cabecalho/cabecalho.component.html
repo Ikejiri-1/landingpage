@@ -4,6 +4,11 @@
   </div>
   <div>
     <ul class="lista-nav">
+      @if (mostrarBotaoVoltar()) {
+      <li>
+        <button routerLink="/" class="botao-cabecalho">Início</button>
+      </li>
+      }
       <li>
         <button class="botao-cabecalho" [routerLink]="linkDoBotao()">
           {{ nomeDoBotao() }}

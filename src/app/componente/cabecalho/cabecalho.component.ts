@@ -19,6 +19,15 @@ import { filter } from 'rxjs/operators';
 })
 export class CabecalhoComponent {
   private router: Router = inject(Router);
+  procedimentos = [
+    '/botox',
+    '/preenchimento',
+    '/bioestimulador',
+    '/limpeza-de-pele',
+    '/sobrancelha',
+    '/cilio',
+    '/ozonioterapia',
+  ];
 
   rotaAtual = signal<string>('');
   mostrarSubmenu = signal(false);
@@ -54,4 +63,7 @@ export class CabecalhoComponent {
   alternarSubmenu() {
     this.mostrarSubmenu.set(!this.mostrarSubmenu());
   }
+  mostrarBotaoVoltar = computed(() =>
+    this.procedimentos.includes(this.rotaAtual())
+  );
 }
