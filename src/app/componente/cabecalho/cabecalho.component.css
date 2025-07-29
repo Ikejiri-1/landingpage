@@ -17,20 +17,20 @@ nav div img {
   gap: 4em;
 }
 
-.lista-nav ul {
+.lista-nav {
   list-style-type: none;
 }
 
-button {
+.botao-cabecalho {
   border: 1px solid #8f647e;
-  padding: 8px;
+  padding: 1rem;
   border-radius: 16px;
   background: transparent;
   cursor: pointer;
   color: #fff;
 }
 
-button:hover {
+.botao-cabecalho:hover {
   background-color: #8f647e;
   transition: 0.3s ease-in-out;
   color: #bd96ae;
@@ -52,4 +52,43 @@ input[type="text"] {
 input::placeholder {
   color: #fff;
   opacity: 0.7;
+}
+
+.submenu-container {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #bd96ae;
+  border: 1px solid #8f647e;
+  border-radius: 8px;
+  z-index: 999;
+  min-width: 160px;
+}
+
+.submenu li {
+  list-style: none;
+  width: 100%;
+}
+
+.submenu button {
+  background: transparent;
+  display: block;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* ← Adicione esta linha */
+  text-align: center; /* ← Opcional, melhora visual em largura cheia */
+}
+
+.submenu button:hover {
+  background-color: #8f647e;
+  color: #bd96ae;
+  transition: 0.3s ease-in-out;
 }

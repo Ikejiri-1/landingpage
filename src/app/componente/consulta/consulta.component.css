@@ -1,12 +1,11 @@
 .consulta {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   text-align: center;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem;
+  padding: 4rem 16rem;
   height: 80vh;
 }
 h2 {
@@ -17,7 +16,10 @@ h2 {
 p {
   font-size: 20px;
   color: #624256;
-  padding: 0 16em;
+  margin-bottom: 1em;
+}
+.container-texto {
+  max-width: 600px;
 }
 form {
   display: flex;

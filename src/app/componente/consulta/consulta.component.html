@@ -1,11 +1,19 @@
 <section class="consulta">
-  <div class="container-texto">
-    <h2>Marque sua Consulta!</h2>
-    <p>
-      Já pensou em cuidar do seu corpo com um método inovador, capaz de
-      transformar sua saúde desde os primeiros dias? Preencha seus dados abaixo
-      e dê o primeiro passo rumo a mais bem-estar e qualidade de vida:
-    </p>
+  <div>
+    <div class="container-texto">
+      <h2>Quer agendar uma sessão?</h2>
+      <p>
+        Já pensou em cuidar do seu corpo com um método inovador, capaz de
+        transformar sua saúde desde os primeiros dias? Preencha seus dados
+        abaixo e dê o primeiro passo rumo a mais bem-estar e qualidade de vida:
+      </p>
+      <h2>
+        Entre em contato com a gente <br />
+        Estamos prontos para cuidar de você!
+      </h2>
+    </div>
+  </div>
+  <div>
     <form [formGroup]="infoPacienteForm" (ngSubmit)="enviarConsulta()">
       <label for="nome">Nome:</label>
       <input

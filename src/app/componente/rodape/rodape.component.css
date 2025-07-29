@@ -1,9 +1,7 @@
 .agendamento {
-  background-color: #5b3951;
   color: white;
   text-align: center;
-  padding: 40px 0;
-  height: 40vh;
+  width: 100%;
 }
 
 .agendamento h1 {
@@ -22,8 +20,8 @@
   gap: 40px;
   justify-items: center;
   align-items: start;
-  background-color: #bd96ae;
-  padding: 40px 20px;
+  background-color: #624256;
+  padding: 4em;
   color: white;
 }
 
@@ -75,4 +73,10 @@
   margin: 0;
   font-size: 1rem;
   line-height: 1.4;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
 }

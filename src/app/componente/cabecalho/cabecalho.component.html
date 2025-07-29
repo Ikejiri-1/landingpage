@@ -2,21 +2,65 @@
   <div>
     <img src="/assets/Screenshot_1.png" alt="" />
   </div>
-  <div class="lista-nav">
-    <ul>
+  <div>
+    <ul class="lista-nav">
       <li>
-        <button [routerLink]="rotaAtual === '/sobre-mim' ? '' : '/sobre-mim'">
+        <button
+          class="botao-cabecalho"
+          [routerLink]="rotaAtual === '/sobre-mim' ? '' : '/sobre-mim'"
+        >
           {{ rotaAtual === "/sobre-mim" ? "Início" : "Sobre mim" }}
         </button>
       </li>
-    </ul>
-    <ul>
-      <li>
-        <button class="botao-procedimentos">Procedimentos</button>
+
+      <li class="submenu-container">
+        <button
+          class="botao-procedimentos botao-cabecalho"
+          (click)="mostrarSubmenu = !mostrarSubmenu"
+        >
+          Procedimentos
+        </button>
+        @if(mostrarSubmenu){
+        <ul class="submenu">
+          <li>
+            <button routerLink="/botox">
+              Toxina Botulínica <br />
+              ( Botox )
+            </button>
+          </li>
+          <li><button routerLink="/preenchimento">Preenchimento</button></li>
+          <li>
+            <button routerLink="/bioestimulador">
+              Bioestimulador de Colágeno
+            </button>
+          </li>
+          <li>
+            <button routerLink="/limpeza-de-pele">
+              Limpeza de Pele <br />
+              ( Cross Peel )
+            </button>
+          </li>
+          <li>
+            <button routerLink="/sobrancelha">Design de sobrancelha</button>
+          </li>
+          <li>
+            <button routerLink="/cilio">Extensão de Cílio</button>
+          </li>
+          <li>
+            <button routerLink="/ozonioterapia">
+              Alívio da dor <br />
+              ( Ozonioterapia )
+            </button>
+          </li>
+        </ul>
+        }
       </li>
-    </ul>
-    <ul>
-      <li><button (click)="redirecionarParaContato()">Contato</button></li>
+
+      <li>
+        <button (click)="redirecionarParaContato()" class="botao-cabecalho">
+          Contato
+        </button>
+      </li>
     </ul>
   </div>
   <div>
