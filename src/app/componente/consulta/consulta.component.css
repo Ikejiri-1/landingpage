@@ -43,7 +43,6 @@ input {
 input::placeholder {
   color: #624256;
   font-size: 14px;
-  text-align: center;
 }
 .botao-consulta {
   margin-top: 1em;
