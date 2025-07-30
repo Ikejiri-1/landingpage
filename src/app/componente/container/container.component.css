@@ -14,3 +14,7 @@
 .direita {
   margin: 80px 80px 80px auto;
 }
+
+.container_menor {
+  width: 1000px;
+}

@@ -1,0 +1,41 @@
+.bursite {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  justify-content: center;
+}
+.bursite-img {
+  width: 400px;
+  height: 400px;
+}
+.tendinite-img {
+  width: 400px;
+  height: 400px;
+}
+.ozonioterapia-img {
+  margin-left: 3em;
+}
+h1,
+h2 {
+  margin-left: 2em;
+}
+h1,
+h3 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+h2,
+h4 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 0.5em;
+  line-height: 150%;
+}
+h4 {
+  margin-right: 1em;
+}
+.tendinite {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  justify-content: center;
+}
