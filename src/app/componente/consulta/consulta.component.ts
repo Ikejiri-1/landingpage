@@ -6,11 +6,12 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { ContainerComponent } from '../container/container.component';
 
 @Component({
   selector: 'app-consulta',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, ContainerComponent],
   templateUrl: './consulta.component.html',
   styleUrl: './consulta.component.css',
 })

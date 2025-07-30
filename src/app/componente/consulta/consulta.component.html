@@ -1,73 +1,78 @@
-<section class="consulta">
-  <div>
-    <div class="container-texto">
-      <h2>Quer agendar uma sessão?</h2>
-      <p>
-        Já pensou em cuidar do seu corpo com um método inovador, capaz de
-        transformar sua saúde desde os primeiros dias? Preencha seus dados
-        abaixo e dê o primeiro passo rumo a mais bem-estar e qualidade de vida:
-      </p>
-      <h2>
-        Entre em contato com a gente <br />
-        Estamos prontos para cuidar de você!
-      </h2>
+<app-container classeCustomizada="centralizada">
+  <section class="consulta">
+    <div>
+      <div class="container-texto">
+        <h2>Quer agendar uma sessão?</h2>
+        <p>
+          Já pensou em cuidar do seu corpo com um método inovador, capaz de
+          transformar sua saúde desde os primeiros dias? Preencha seus dados
+          abaixo e dê o primeiro passo rumo a mais bem-estar e qualidade de
+          vida:
+        </p>
+        <h2>
+          Entre em contato com a gente <br />
+          Estamos prontos para cuidar de você!
+        </h2>
+      </div>
     </div>
-  </div>
-  <div>
-    <form [formGroup]="infoPacienteForm" (ngSubmit)="enviarConsulta()">
-      <label for="nome">Nome:</label>
-      <input
-        formControlName="nome"
-        id="nome"
-        type="text"
-        placeholder="Seu nome"
-      />
-      @if(infoPacienteForm.get('nome')?.errors &&
-      infoPacienteForm.get('nome')?.touched){
-      <div class="error">Campo obrigatório</div>
-      }
-      <label for="telefone">Telefone:</label>
-      <input
-        formControlName="telefone"
-        id="telefone"
-        type="tel"
-        placeholder="Seu telefone"
-      />
-      @if(infoPacienteForm.get('telefone')?.errors &&
-      infoPacienteForm.get('telefone')?.touched){
-      <div class="error">Campo obrigatório</div>
-      }
-      <label for="email">E-mail:</label>
-      <input
-        formControlName="email"
-        id="email"
-        type="email"
-        placeholder="Seu e-mail"
-      />
-      @if (infoPacienteForm.get('email')?.errors?.['required'] &&
-      infoPacienteForm.get('email')?.touched) {
-      <div class="error">Campo obrigatório</div>
-      } @if (infoPacienteForm.get('email')?.errors?.['email'] &&
-      infoPacienteForm.get('email')?.touched) {
-      <div class="error">Formato de e-mail: Seunome&#64;dominio.com</div>
-      }
-      <label for="data">Data desejada:</label>
-      <input
-        formControlName="data"
-        id="data"
-        type="date"
-        placeholder="Data da consulta"
-        [min]="hoje"
-      />
+    <div>
+      <form [formGroup]="infoPacienteForm" (ngSubmit)="enviarConsulta()">
+        <label for="nome">Nome:</label>
+        <input
+          formControlName="nome"
+          id="nome"
+          type="text"
+          placeholder="Seu nome"
+        />
+        @if(infoPacienteForm.get('nome')?.errors &&
+        infoPacienteForm.get('nome')?.touched){
+        <div class="error">Campo obrigatório</div>
+        }
+        <label for="telefone">Telefone:</label>
+        <input
+          formControlName="telefone"
+          id="telefone"
+          type="tel"
+          placeholder="Seu telefone"
+        />
+        @if(infoPacienteForm.get('telefone')?.errors &&
+        infoPacienteForm.get('telefone')?.touched){
+        <div class="error">Campo obrigatório</div>
+        }
+        <label for="email">E-mail:</label>
+        <input
+          formControlName="email"
+          id="email"
+          type="email"
+          placeholder="Seu e-mail"
+        />
+        @if (infoPacienteForm.get('email')?.errors?.['required'] &&
+        infoPacienteForm.get('email')?.touched) {
+        <div class="error">Campo obrigatório</div>
+        } @if (infoPacienteForm.get('email')?.errors?.['email'] &&
+        infoPacienteForm.get('email')?.touched) {
+        <div class="error">Formato de e-mail: Seunome&#64;dominio.com</div>
+        }
+        <label for="data">Data desejada:</label>
+        <input
+          formControlName="data"
+          id="data"
+          type="date"
+          placeholder="Data da consulta"
+          [min]="hoje"
+        />
 
-      <button
-        class="botao-consulta"
-        type="submit"
-        [disabled]="infoPacienteForm.invalid"
-        [ngClass]="infoPacienteForm.valid ? 'botao-consulta' : 'botao-inativo'"
-      >
-        Marcar Consulta
-      </button>
-    </form>
-  </div>
-</section>
+        <button
+          class="botao-consulta"
+          type="submit"
+          [disabled]="infoPacienteForm.invalid"
+          [ngClass]="
+            infoPacienteForm.valid ? 'botao-consulta' : 'botao-inativo'
+          "
+        >
+          Enviar para o Whatsapp
+        </button>
+      </form>
+    </div>
+  </section>
+</app-container>
