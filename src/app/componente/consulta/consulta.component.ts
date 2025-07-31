@@ -35,7 +35,23 @@ export class ConsultaComponent implements OnInit {
       this.infoPacienteForm.markAllAsTouched();
       return;
     }
+
     const dados = this.infoPacienteForm.value;
+
+    const [ano, mes, dia] = dados.data.split('-');
+    const dataFormatada = `${dia}/${mes}/${ano}`;
+
+    let mensagem = `Olá, gostaria de agendar uma consulta:
+    Nome: ${dados.nome}\n
+    Telefone: ${dados.telefone}\n
+    E-mail: ${dados.email}\n
+    Data da consulta: ${dataFormatada}\n`;
+
+    const telefoneDestino = '5512981211700';
+    const url = `https://wa.me/${telefoneDestino}?text=${encodeURIComponent(
+      mensagem
+    )}`;
+    window.open(url, '_blank');
     console.log('Consulta enviada:', dados);
     alert('Consulta enviada com sucesso!');
     this.infoPacienteForm.reset();
