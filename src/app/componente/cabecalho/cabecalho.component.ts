@@ -25,7 +25,7 @@ export class CabecalhoComponent {
     '/bioestimulador',
     '/limpeza-de-pele',
     '/sobrancelha',
-    '/cilio',
+    '/cilios',
     '/ozonioterapia',
   ];
 

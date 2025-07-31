@@ -4,6 +4,7 @@ import { SeparadorComponent } from '../../componente/separador/separador.compone
 import { ConsultaComponent } from '../../componente/consulta/consulta.component';
 import { RodapeComponent } from '../../componente/rodape/rodape.component';
 import { ContainerComponent } from '../../componente/container/container.component';
+import { IconebotaoComponent } from '../../componente/iconebotao/iconebotao.component';
 
 @Component({
   selector: 'app-principal',
@@ -14,6 +15,7 @@ import { ContainerComponent } from '../../componente/container/container.compone
     SeparadorComponent,
     ConsultaComponent,
     ContainerComponent,
+    IconebotaoComponent,
   ],
   templateUrl: './principal.component.html',
   styleUrl: './principal.component.css',

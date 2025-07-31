@@ -3,7 +3,6 @@
   grid-template-columns: 0.5fr 0.5fr;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
   padding: 0 20rem;
   width: 100%;
   margin: 0 auto;
@@ -46,6 +45,7 @@ app-container .container {
 }
 .tratamento-doenca-container {
   margin: 3em 2em;
+  text-align: center;
 }
 .beneficios {
   display: flex;
@@ -83,19 +83,11 @@ app-container .container {
   animation-timeline: view(0%);
   animation-range: entry 0 cover 50%;
 }
-.botao-whatsapp {
-  position: fixed;
-  bottom: 0px; /* Adiciona um espaçamento do fundo */
-  right: 0px; /* Adiciona um espaçamento da lateral */
-  z-index: 9999; /* Garante que fique acima de outros elementos */
-}
 
-.botao-whatsapp img {
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-}
 @media screen and (max-width: 1400px) {
+  .principal {
+    height: 50vh;
+  }
   .texto h1 {
     font-size: 24px;
   }
@@ -110,6 +102,12 @@ app-container .container {
     text-align: center;
     height: 70vh;
   }
+  .principal h1 {
+    font-size: 32px;
+  }
+  .principal p {
+    font-size: 20px;
+  }
 
   .imagem img {
     max-width: 300px;
@@ -121,8 +119,7 @@ app-container .container {
     font-size: 28px;
   }
 
-  .beneficios p,
-  .principal p {
+  .beneficios p {
     font-size: 18px;
   }
   .ozonioterapia-container {
@@ -132,6 +129,9 @@ app-container .container {
 }
 
 @media screen and (max-width: 600px) {
+  .principal {
+    height: 85vh;
+  }
   .imagem img {
     max-width: 250px;
   }
@@ -140,7 +140,7 @@ app-container .container {
     padding: 1rem 3rem;
   }
   .principal p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .beneficios p {
     font-size: 14px;
@@ -168,14 +168,8 @@ app-container .container {
   }
   .tratamento-doenca-container h1 {
     font-size: 20px;
-    text-align: center;
   }
   .tratamento-doenca-container p {
     font-size: 14px;
-    text-align: center;
-  }
-  .botao-whatsapp img {
-    width: 60px;
-    height: 60px;
   }
 }

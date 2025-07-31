@@ -1,0 +1,18 @@
+.botao-whatsapp {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 9999;
+}
+
+.botao-whatsapp img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .botao-whatsapp img {
+    width: 60px;
+    height: 60px;
+  }
+}

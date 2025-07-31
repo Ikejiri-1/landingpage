@@ -24,10 +24,6 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .responsiva {
-    height: 90vh;
-    width: 100%;
-  }
   .centralizada {
     width: 100%;
   }
@@ -35,5 +31,10 @@
     width: 100%;
     margin: 80px auto;
     height: 80vh;
+  }
+  @media screen and (max-width: 600px) {
+    .form {
+      height: 80vh;
+    }
   }
 }

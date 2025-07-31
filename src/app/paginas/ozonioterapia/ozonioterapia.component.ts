@@ -3,6 +3,7 @@ import { CabecalhoComponent } from '../../componente/cabecalho/cabecalho.compone
 import { ContainerComponent } from '../../componente/container/container.component';
 import { SeparadorComponent } from '../../componente/separador/separador.component';
 import { RodapeComponent } from '../../componente/rodape/rodape.component';
+import { IconebotaoComponent } from '../../componente/iconebotao/iconebotao.component';
 
 @Component({
   selector: 'app-ozonioterapia',
@@ -12,6 +13,7 @@ import { RodapeComponent } from '../../componente/rodape/rodape.component';
     CabecalhoComponent,
     ContainerComponent,
     SeparadorComponent,
+    IconebotaoComponent,
   ],
   templateUrl: './ozonioterapia.component.html',
   styleUrl: './ozonioterapia.component.css',

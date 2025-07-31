@@ -3,6 +3,7 @@ import { CabecalhoComponent } from '../../componente/cabecalho/cabecalho.compone
 import { RodapeComponent } from '../../componente/rodape/rodape.component';
 import { SeparadorComponent } from '../../componente/separador/separador.component';
 import { ContainerComponent } from '../../componente/container/container.component';
+import { IconebotaoComponent } from '../../componente/iconebotao/iconebotao.component';
 
 @Component({
   selector: 'app-sobremim',
@@ -12,6 +13,7 @@ import { ContainerComponent } from '../../componente/container/container.compone
     RodapeComponent,
     SeparadorComponent,
     ContainerComponent,
+    IconebotaoComponent,
   ],
   templateUrl: './sobremim.component.html',
   styleUrl: './sobremim.component.css',
