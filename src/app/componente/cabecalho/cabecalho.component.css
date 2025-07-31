@@ -5,17 +5,20 @@ nav {
   justify-content: space-around;
   padding: 0 5em;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 nav div img {
-  width: 400px;
-  height: 200px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 .lista-nav {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
 }
 
 .lista-nav {
@@ -92,4 +95,29 @@ input::placeholder {
   background-color: #8f647e;
   color: #bd96ae;
   transition: 0.3s ease-in-out;
+}
+@media (max-width: 1200px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .lista-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav div img {
+    max-width: 250px;
+    padding-left: 2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 1em;
+  }
+  nav div img {
+    padding-left: 1em;
+  }
 }

@@ -2,15 +2,20 @@
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
   align-items: center;
-  justify-content: center; /* Isso alinha as colunas dentro do container */
-  height: 59.7vh;
-  padding: 4rem;
-  width: 1200px;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 20rem;
+  width: 100%;
   margin: 0 auto;
+  height: 70vh;
+  background-color: #624256;
 }
+
 .imagem img {
   width: 100%;
   max-width: 400px;
+  height: auto;
+  object-fit: contain;
 }
 
 h1 {
@@ -78,14 +83,99 @@ app-container .container {
   animation-timeline: view(0%);
   animation-range: entry 0 cover 50%;
 }
-
 .botao-whatsapp {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 0px; /* Adiciona um espaçamento do fundo */
+  right: 0px; /* Adiciona um espaçamento da lateral */
+  z-index: 9999; /* Garante que fique acima de outros elementos */
 }
 
 .botao-whatsapp img {
-  width: 100px;
+  width: 80px;
   height: 80px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1400px) {
+  .texto h1 {
+    font-size: 24px;
+  }
+  .texto p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .principal {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    text-align: center;
+    height: 70vh;
+  }
+
+  .imagem img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .titulo h1,
+  .beneficios h2 {
+    font-size: 28px;
+  }
+
+  .beneficios p,
+  .principal p {
+    font-size: 18px;
+  }
+  .ozonioterapia-container {
+    text-align: center;
+    padding: 0 1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imagem img {
+    max-width: 250px;
+  }
+
+  .principal {
+    padding: 1rem 3rem;
+  }
+  .principal p {
+    font-size: 18px;
+  }
+  .beneficios p {
+    font-size: 14px;
+  }
+  .beneficios h2 {
+    font-size: 24px;
+  }
+  .beneficios {
+    padding: 1em 2em;
+  }
+  .ozonioterapia-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .ozonioterapia-container h1 {
+    font-size: 20px;
+  }
+  .ozonioterapia-container p {
+    font-size: 14px;
+    padding: 0 1em;
+  }
+  .ozonioterapia-container img {
+    max-width: 350px;
+  }
+  .tratamento-doenca-container h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .tratamento-doenca-container p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .botao-whatsapp img {
+    width: 60px;
+    height: 60px;
+  }
 }

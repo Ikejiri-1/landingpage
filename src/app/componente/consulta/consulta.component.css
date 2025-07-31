@@ -68,3 +68,48 @@ input::placeholder {
   color: red;
   margin-bottom: 12px;
 }
+@media screen and (max-width: 1024px) {
+  .consulta {
+    grid-template-columns: 1fr;
+    padding: 2em;
+  }
+  .container-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+  label {
+    font-size: 16px;
+  }
+  form {
+    margin-top: 1em;
+  }
+}
+@media screen and(max-width: 600px) {
+  .consulta {
+    padding: 1em;
+  }
+  h2 {
+    margin-bottom: 0.5em;
+  }
+  p {
+    font-size: 14px;
+  }
+  label {
+    font-size: 14px;
+  }
+  input {
+    max-width: 200px;
+  }
+  .botao-consulta {
+    padding: 0.5em 1em;
+  }
+}

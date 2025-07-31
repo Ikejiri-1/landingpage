@@ -3,7 +3,7 @@
   border: 1px solid #bd96ae;
   background: linear-gradient(to bottom, #624256, #bd96ae);
   box-shadow: 0px 8px 16px 0px (61, 139, 253, 0.15);
-  width: 1200px;
+  max-width: 1200px;
   margin: 80px 80px;
 }
 
@@ -14,11 +14,26 @@
 .direita {
   margin: 80px 80px 80px auto;
 }
-
-.container_menor {
-  width: 1000px;
+.esquerda {
+  margin: 80px auto 80px 80px;
 }
-.container_info {
-  width: 800px;
-  height: 600px;
+@media screen and (max-width: 1360px) {
+  .direita,
+  .esquerda {
+    margin: 80px auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .responsiva {
+    height: 90vh;
+    width: 100%;
+  }
+  .centralizada {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+    margin: 80px auto;
+    height: 80vh;
+  }
 }
