@@ -79,39 +79,13 @@ app-container .container {
   animation-range: entry 0 cover 50%;
 }
 
-@keyframes appearLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px) scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-  }
+.botao-whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
-@keyframes appearRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px) scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-  }
-}
-
-.left-card {
-  animation-name: appearLeft;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-out;
-}
-
-/* Direita */
-.right-card {
-  animation-name: appearRight;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-out;
+.botao-whatsapp img {
+  width: 100px;
+  height: 80px;
 }

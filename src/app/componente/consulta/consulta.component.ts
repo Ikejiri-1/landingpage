@@ -52,8 +52,6 @@ export class ConsultaComponent implements OnInit {
       mensagem
     )}`;
     window.open(url, '_blank');
-    console.log('Consulta enviada:', dados);
-    alert('Consulta enviada com sucesso!');
     this.infoPacienteForm.reset();
   }
 }
