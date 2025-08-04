@@ -10,9 +10,28 @@
   height: 80px;
   cursor: pointer;
 }
+.botao-instagram {
+  position: fixed;
+  bottom: 60px;
+  right: 0px;
+  z-index: 9999;
+}
+.botao-instagram img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
 @media screen and (max-width: 600px) {
   .botao-whatsapp img {
     width: 60px;
     height: 60px;
+  }
+  .botao-instagram img {
+    width: 60px;
+    height: 60px;
+  }
+  .botao-instagram {
+    bottom: 50px;
+    margin-right: 1px;
   }
 }

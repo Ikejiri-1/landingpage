@@ -90,7 +90,10 @@ input::placeholder {
     font-size: 18px;
   }
   label {
-    font-size: 16px;
+    font-size: 18px;
+  }
+  .botao-consulta {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 600px) {

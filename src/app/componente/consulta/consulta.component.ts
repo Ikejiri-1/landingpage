@@ -27,7 +27,6 @@ export class ConsultaComponent implements OnInit {
       email: new FormControl('', [Validators.required, Validators.email]),
       data: new FormControl('', Validators.required),
     });
-    console.log('Formulário criado:', this.infoPacienteForm);
   }
 
   enviarConsulta() {
