@@ -116,4 +116,7 @@ input::placeholder {
   .botao-consulta {
     padding: 0.5em 1em;
   }
+  .error {
+    font-size: 14px;
+  }
 }
