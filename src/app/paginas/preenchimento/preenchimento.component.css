@@ -1,0 +1,65 @@
+h1 {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 2em;
+  color: #fff;
+}
+li {
+  font-size: 24px;
+  list-style: none;
+  color: #fff;
+  line-height: 300%;
+  font-weight: 500;
+}
+.card-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.imagem {
+  width: 350px;
+  height: 500px;
+  object-fit: contain;
+}
+@keyframes appear {
+  from {
+    opacity: 0.3;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.card {
+  animation: appear 2s ease-in-out;
+}
+@media screen and (max-width: 1024px) {
+  .card-conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+  .imagem {
+    width: 400px;
+    height: 600px;
+  }
+  h1 {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imagem {
+    width: 300px;
+    height: 500px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  li {
+    line-height: 200%;
+    font-size: 20px;
+  }
+}
