@@ -32,6 +32,7 @@ nav div img {
   background: transparent;
   cursor: pointer;
   color: #fff;
+  font-size: 18px;
 }
 
 .botao-cabecalho:hover {
@@ -39,7 +40,9 @@ nav div img {
   transition: 0.3s ease-in-out;
   color: #bd96ae;
 }
-
+button {
+  font-weight: 600;
+}
 nav > div:last-child {
   display: flex;
   justify-content: flex-end;
@@ -111,6 +114,9 @@ input::placeholder {
   nav div img {
     max-width: 250px;
     padding-left: 2em;
+  }
+  .botao-cabecalho {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 600px) {

@@ -125,4 +125,7 @@ h2 {
   h1 {
     font-size: 28px;
   }
+  .texto img {
+    width: 250px;
+  }
 }

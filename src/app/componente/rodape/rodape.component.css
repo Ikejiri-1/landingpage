@@ -33,8 +33,6 @@
 }
 
 .redes-sociais img {
-  width: 60px !important;
-  height: 60px !important;
   filter: none !important;
 }
 
@@ -45,13 +43,19 @@
   align-items: center;
   text-align: center;
 }
+.contatos .linha {
+  margin: 1em 0;
+}
 
 .horarios h2,
 .contatos h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
-
+.icon {
+  width: 40px !important;
+  height: 40px !important;
+}
 .linha {
   display: flex;
   align-items: center;
