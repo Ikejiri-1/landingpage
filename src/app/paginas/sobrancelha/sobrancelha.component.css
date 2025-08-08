@@ -1,0 +1,22 @@
+h1 {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 2em;
+  color: #fff;
+}
+ul {
+  padding: 2em 0;
+}
+li {
+  font-size: 24px;
+  list-style: none;
+  color: #fff;
+  line-height: 250%;
+  font-weight: 500;
+}
+.card-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
