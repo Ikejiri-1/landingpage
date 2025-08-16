@@ -18,9 +18,11 @@ li {
   gap: 1em;
 }
 .imagem {
-  width: 350px;
+  width: 400px;
   height: 500px;
-  object-fit: contain;
+  margin: 2em 0;
+  margin-left: 2em;
+  border-radius: 2em;
 }
 @keyframes appear {
   from {
